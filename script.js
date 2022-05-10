@@ -22,7 +22,11 @@
         array.forEach(post => answer.innerHTML +=
         
             
-              `User ID: ${post.userId} <hr/> ID: ${post.id} <hr/> title: ${post.title} <hr/> body: ${post.id} <hr/>`
+              `<div>
+<ul>
+User ID: ${post.userId} <hr/> ID: ${post.id} <hr/> title: ${post.title} <hr/> body: ${post.id} <hr/>
+</ul>
+<div>`
           
          
           
