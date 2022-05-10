@@ -35,8 +35,21 @@ User ID: ${post.userId} <hr/> ID: ${post.id} <hr/> title: ${post.title} <hr/> bo
   })
 
   cw2.addEventListener("click", function () {
-    //TODO implement it
+    answer.innerHTML="Loading..." 
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(response => response.json())
+      .then(array => {
+        answer.innerHTML = "";
+        array.forEach(post => answer.innerHTML +=
+        
+            
+              `<div>
+<ul>
+User ID: ${post.userId} <hr/> ID: ${post.id} <hr/> title: ${post.title} <hr/> body: ${post.id} <hr/>
+</ul>
+<div>`)
   })
+    })
 
   cw3.addEventListener("click", function () {
     //TODO implement it
